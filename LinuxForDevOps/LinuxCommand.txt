@@ -1,17 +1,34 @@
-# The importants Linux command for DevOps
-## pwd : Find the present working Directory, cd: change directory
-
-#install une app
-    yum install/uninstall nom+de+service
-    apt 
-#sudo ufw status 
-#sudo netstat -tuln | grep 80
-#custum TCP
-#cat voire le contenue d un fichier
-#rm 
-#vim
-# systemctl 
-systemctl action( status, restart, start, stop, reload), le nom_du_service
-#ngnix install 
-    yum install ngnix  
-    #check version
+Linux Important Commands for DevOps
+Navigation
+pwd – print working directory
+ls – list files
+ls -l – detailed list
+cd path – change directory
+cd .. – parent directory
+File Management
+cat file.txt – show file content
+vim file.txt – edit file
+rm file.txt – delete file
+rm -r folder/ – delete folder
+Package Management (Ubuntu/Debian)
+sudo apt update
+sudo apt install service_name
+sudo apt remove service_name
+Package Management (CentOS/Amazon Linux)
+sudo yum install service_name
+sudo yum remove service_name
+Network & Firewall
+sudo ufw status – firewall status
+sudo netstat -tuln – open ports
+sudo netstat -tuln | grep 80 – check port 80
+System Services (systemctl)
+sudo systemctl status service
+sudo systemctl start service
+sudo systemctl stop service
+sudo systemctl restart service
+sudo systemctl reload service
+Nginx
+sudo apt install nginx (Ubuntu)
+sudo yum install nginx (CentOS)
+nginx -v – check version
+sudo systemctl status nginx
