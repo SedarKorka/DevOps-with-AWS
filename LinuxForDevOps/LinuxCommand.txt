@@ -1,2 +1,17 @@
 # The importants Linux command for DevOps
 ## pwd : Find the present working Directory, cd: change directory
+
+#install une app
+    yum install/uninstall nom+de+service
+    apt 
+#sudo ufw status 
+#sudo netstat -tuln | grep 80
+#custum TCP
+#cat voire le contenue d un fichier
+#rm 
+#vim
+# systemctl 
+systemctl action( status, restart, start, stop, reload), le nom_du_service
+#ngnix install 
+    yum install ngnix  
+    #check version
