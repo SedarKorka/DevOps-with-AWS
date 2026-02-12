@@ -1,0 +1,104 @@
+# DevOps Fundamentals - Complete Guide
+
+
+## 🗂️ Version Control Repository
+
+### 🛠️ Tools: AWS CodeCommit
+Alternatives: GitHub, GitLab, BitBucket
+
+### Test Examples
+- HELLO TEST
+- BOOK1 BOOK2
+
+
+## 1️⃣ Version Control - Role
+
+### Git Tools
+- `git` (git bash)
+- `git cmd`
+- `git UI`
+- GitHub
+
+### 💻 Software Development
+
+#### Version Management
+- Branching: feature, bug, documentation, refactor
+- Merging
+- Collaboration
+
+
+## 2️⃣ CI/CD Concept
+
+### CI (Continuous Integration)
+- Continuous code integration
+
+### CD (Continuous Deployment)
+- Continuous deployment
+
+
+## 3️⃣ Compliance
+- Standards and compliance
+
+
+## 4️⃣ Team Collaboration
+- Teamwork and collaboration
+
+
+## 🐧 Essential Linux Commands for DevOps
+
+### Navigation
+```bash
+pwd                    # Print working directory
+ls                     # List files
+ls -l                  # Detailed list
+cd path                # Change directory
+cd ..                  # Parent directory
+```
+
+### File Management
+```bash
+cat file.txt           # Show file content
+vim file.txt           # Edit file
+rm file.txt            # Delete file
+rm -r folder/          # Delete folder
+```
+
+### Package Management (Ubuntu/Debian)
+```bash
+sudo apt update                    # Update package list
+sudo apt install service_name      # Install service
+sudo apt remove service_name       # Remove service
+```
+
+### Package Management (CentOS/Amazon Linux)
+```bash
+sudo yum install service_name      # Install service
+sudo yum remove service_name       # Remove service
+```
+
+### Network & Firewall
+```bash
+sudo ufw status                    # Firewall status
+sudo netstat -tuln                 # Open ports
+sudo netstat -tuln | grep 80       # Check port 80
+```
+
+### System Services (systemctl)
+```bash
+sudo systemctl status service      # Service status
+sudo systemctl start service       # Start service
+sudo systemctl stop service        # Stop service
+sudo systemctl restart service     # Restart service
+sudo systemctl reload service      # Reload configuration
+```
+
+### Nginx
+```bash
+# Installation
+sudo apt install nginx             # Ubuntu/Debian
+sudo yum install nginx             # CentOS/Amazon Linux
+
+# Commands
+nginx -v                           # Check version
+sudo systemctl status nginx        # Nginx status
+```
