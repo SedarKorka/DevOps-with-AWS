@@ -1,0 +1,178 @@
+DEVOPS FUNDAMENTALS - GIT COMPLETE GUIDE
+========================================
+
+1. VERSION CONTROL REPOSITORY
+-----------------------------
+
+Tools:
+- Git (CLI)
+- GitHub
+- GitLab
+- Bitbucket
+- AWS CodeCommit
+
+Purpose:
+- Track code changes
+- Collaborate with teams
+- Manage versions
+
+
+2. GIT FUNDAMENTALS
+--------------------
+
+git init
+Initialize a new repository.
+
+git status
+Check current repository state.
+
+git add .
+Add all files to staging.
+
+git add file.txt
+Add a specific file.
+
+git commit -m "message"
+Save changes with a message.
+
+git log
+Show commit history.
+
+git log --oneline
+Show short commit history.
+
+git diff
+Show changes before commit.
+
+git reset --hard <commit_id>
+Reset project to a previous state (danger).
+
+
+3. BRANCHING STRATEGY
+----------------------
+
+Main Branch:
+- main or master
+- Stable production code
+
+Feature Branch:
+- Used for new features
+Example:
+feature-add-number
+
+Release Branch:
+- Prepare deployment
+Examples:
+release-v0
+release-v1
+
+Fix / Hotfix Branch:
+- Fix bugs quickly
+Examples:
+fix-login
+hotfix-security
+
+
+4. BRANCH COMMANDS
+-------------------
+
+git branch
+List branches.
+
+git checkout branch_name
+Switch branch.
+
+git checkout -b new_branch
+Create and switch branch.
+
+
+5. WORKFLOW
+------------
+
+main → feature → test → merge → release → deploy
+
+
+6. MERGE / REBASE / CHERRY-PICK
+--------------------------------
+
+git merge branch_name
+Merge branch into current branch.
+
+git rebase branch_name
+Reapply commits on top of another branch.
+
+git cherry-pick <commit_id>
+Copy a specific commit.
+
+
+7. REMOTE REPOSITORY
+---------------------
+
+git remote add origin URL
+Add remote repository.
+
+git remote -v
+Check remote repositories.
+
+git push origin main
+Push code to GitHub.
+
+git pull origin main
+Pull latest changes.
+
+
+8. SSH CONFIGURATION
+---------------------
+
+ssh-keygen -t rsa -b 4096 -C "your_email"
+Generate SSH key.
+
+ssh -T git@github.com
+Test SSH connection.
+
+
+9. CLONE & FORK
+----------------
+
+git clone URL
+Download repository locally.
+
+Fork:
+Create your own copy on GitHub.
+
+
+10. BEST PRACTICES
+-------------------
+
+- Use branches (avoid working directly on main)
+- Write clear commit messages
+- Pull before push
+- Use .gitignore
+- Keep clean history
+
+
+11. GIT WORKFLOW EXAMPLE
+------------------------
+
+git init
+git add .
+git commit -m "initial commit"
+
+git checkout -b feature-login
+# work...
+git add .
+git commit -m "add login feature"
+
+git checkout main
+git merge feature-login
+
+git push origin main
+
+
+LEARNING OUTCOME
+----------------
+
+- Understand Git basics
+- Use branches effectively
+- Work with remote repositories
+- Apply DevOps workflow

@@ -101,4 +101,4 @@ sudo yum install nginx             # CentOS/Amazon Linux
 # Commands
 nginx -v                           # Check version
 sudo systemctl status nginx        # Nginx status
-```
+``
