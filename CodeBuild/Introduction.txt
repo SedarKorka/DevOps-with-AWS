@@ -1,0 +1,158 @@
+DEVOPS COURSE NOTES - AWS CODEBUILD
+===================================
+
+1. INTRODUCTION
+----------------
+
+AWS CodeBuild is a fully managed build service used in DevOps.
+
+It helps to:
+- Compile source code
+- Run automated tests
+- Install dependencies
+- Package applications
+
+It is a key component of CI/CD pipelines.
+
+
+2. PROBLEM BEFORE CODEBUILD
+----------------------------
+
+Manual deployment has limitations:
+- No automatic testing
+- No validation of code quality
+- No automation
+- High risk of bugs in production
+
+Solution:
+Use automated build tools like AWS CodeBuild.
+
+
+3. DEVOPS PIPELINE OVERVIEW
+----------------------------
+
+Typical DevOps workflow:
+
+Code → Version Control → Build → Deploy → Monitor
+
+Tools:
+- Git / GitHub (Version control)
+- AWS CodeBuild (Build)
+- AWS CodeDeploy (Deploy)
+- AWS CodePipeline (Automation)
+
+
+4. WHAT CODEBUILD DOES
+-----------------------
+
+CodeBuild acts like an automated system that processes code.
+
+Steps:
+
+1. Compilation
+- Convert code into executable format
+
+2. Dependency Installation
+- Install required libraries and packages
+Example:
+- pip install (Python)
+- npm install (Node.js)
+
+3. Testing
+- Run automated tests
+Types:
+- Unit tests
+- Integration tests
+- Performance tests
+
+4. Optimization
+- Improve performance
+- Validate code quality
+
+5. Packaging
+- Prepare final build artifact
+Examples:
+- ZIP file
+- Docker image
+
+
+5. AUTOMATION IN DEVOPS
+------------------------
+
+With CodeBuild:
+- Developers push code (git push)
+- Build process starts automatically
+- Tests run automatically
+- Errors are detected early
+
+This reduces manual work and improves reliability.
+
+
+6. ROLE OF DEVOPS ENGINEER
+----------------------------
+
+- Configure CodeBuild
+- Automate build process
+- Integrate with GitHub
+- Monitor logs and errors
+- Ensure smooth CI/CD pipeline
+
+
+7. TYPES OF TESTING IN CODEBUILD
+---------------------------------
+
+- Unit Testing: test small code units
+- Integration Testing: test combined components
+- Performance Testing: test speed and load
+
+Note:
+These tests are part of the build process.
+
+
+8. DIFFERENCE WITH SOFTWARE LIFECYCLE
+--------------------------------------
+
+Software Development Lifecycle:
+- Design
+- Development
+- Testing
+- Deployment
+- Maintenance
+
+DevOps:
+- Testing is automated inside the build stage
+
+
+9. USE CASES OF CODEBUILD
+--------------------------
+
+- Continuous Integration (CI)
+- Build and packaging automation
+- Automated testing
+- Infrastructure as Code (IaC)
+- Docker image building
+
+
+10. SUMMARY
+------------
+
+CodeBuild automates the process of preparing applications.
+
+Workflow:
+Code → Build → Test → Package → Deploy
+
+It ensures:
+- Code quality
+- Faster delivery
+- Automation
+- Reliability
+
+
+LEARNING OUTCOME
+----------------
+
+After this lesson, I understand:
+- What AWS CodeBuild is
+- How build automation works
+- The role of CodeBuild in CI/CD
+- How DevOps improves deployment processes
